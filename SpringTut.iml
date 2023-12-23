@@ -7,7 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="SpringTut" value="dece9d2f-3f5a-4bcd-807a-fcf9b1c257f1" />
-          <factory-entry name="entityManagerFactory" />
+          <factory-entry name="entityManagerFactory" value="eb04c7e4-6e9f-42b2-9310-4dcc249b15da" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
