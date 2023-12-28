@@ -1,14 +1,13 @@
-package com.example.springtut;
+package com.shreeram800.springtut;
 
 
-import com.example.springtut.customer.Customer;
-import com.example.springtut.customer.CustomerRepo;
+import com.shreeram800.springtut.customer.Customer;
+import com.shreeram800.springtut.customer.CustomerRepo;
 import com.github.javafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 
 import java.util.ArrayList;
 import java.util.List;

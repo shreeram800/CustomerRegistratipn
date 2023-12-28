@@ -1,4 +1,4 @@
-package com.example.springtut.customer;
+package com.shreeram800.springtut.customer;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

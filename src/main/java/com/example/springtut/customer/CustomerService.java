@@ -1,10 +1,9 @@
-package com.example.springtut.customer;
-import com.example.springtut.exceptions.DuplicateNotFoundException;
-import com.example.springtut.exceptions.RequestValidationRespose;
+package com.shreeram800.springtut.customer;
+import com.shreeram800.springtut.exceptions.DuplicateNotFoundException;
+import com.shreeram800.springtut.exceptions.RequestValidationRespose;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 
 @Service
 public class CustomerService {

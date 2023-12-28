@@ -1,4 +1,4 @@
-package com.example.springtut.customer;
+package com.shreeram800.springtut.customer;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

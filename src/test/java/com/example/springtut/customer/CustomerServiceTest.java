@@ -1,19 +1,15 @@
-package com.example.springtut.customer;
+package com.shreeram800.springtut.customer;
 
-import com.example.springtut.exceptions.DuplicateNotFoundException;
+import com.shreeram800.springtut.exceptions.DuplicateNotFoundException;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)

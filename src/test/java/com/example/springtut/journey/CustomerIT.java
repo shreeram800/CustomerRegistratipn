@@ -1,7 +1,7 @@
-package com.example.springtut.journey;
+package com.shreeram800.springtut.journey;
 
-import com.example.springtut.customer.Customer;
-import com.example.springtut.customer.CustomerRegistrationRequest;
+import com.shreeram800.springtut.customer.Customer;
+import com.shreeram800.springtut.customer.CustomerRegistrationRequest;
 import com.github.javafaker.Faker;
 import com.github.javafaker.Name;
 import org.junit.jupiter.api.Test;

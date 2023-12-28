@@ -1,4 +1,4 @@
-package com.example.springtut;
+package com.shreeram800.springtut;
 
 import com.github.javafaker.Faker;
 import org.flywaydb.core.Flyway;

@@ -1,5 +1,6 @@
-package com.example.springtut.customer;
-import com.example.springtut.AbstractTestContainerunitTest;
+package com.shreeram800.springtut.customer;
+import com.shreeram800.springtut.AbstractTestContainerunitTest;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
@@ -22,7 +23,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestContainerunitTest{
         Customer customer=new Customer(1,faker.name().fullName(),faker.internet().emailAddress()+ "-" + UUID.randomUUID(),45);
         underTest.insertCustomer(customer);
         List<Customer> customerList=underTest.selectAllCustomers();
-        assertThat(customerList).isNotEmpty();
+        Assertions.assertThat(customerList).isNotEmpty();
     }
     @Test
     void selectCustomerById() {
@@ -31,7 +32,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestContainerunitTest{
         underTest.insertCustomer(customer);
         int id= underTest.selectAllCustomers().stream().filter(c->c.getEmail().equals(email)).map(Customer::getId).findFirst().orElseThrow();
         Optional<Customer> actual =underTest.selectCustomerById(id);
-        assertThat(actual).isPresent().hasValueSatisfying(c->{
+        Assertions.assertThat(actual).isPresent().hasValueSatisfying(c->{
             assertThat(c.getId()).isEqualTo(id);
             assertThat(c.getName()).isEqualTo(customer.getName());
             assertThat(c.getEmail()).isEqualTo(customer.getEmail());
@@ -130,7 +131,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestContainerunitTest{
         updatedCustomer.setAge(customer.getAge());
         underTest.updateCustomer(updatedCustomer);
         Optional<Customer> updatedCustomerFromDb = underTest.selectCustomerById(id);
-        assertThat(updatedCustomerFromDb).isPresent().hasValueSatisfying(c->{
+        Assertions.assertThat(updatedCustomerFromDb).isPresent().hasValueSatisfying(c->{
             assertThat(c.getId()).isEqualTo(id);
             assertThat(c.getEmail()).isEqualTo(new_email);
         });

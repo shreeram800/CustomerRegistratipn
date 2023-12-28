@@ -1,4 +1,4 @@
-package com.example.springtut.customer;
+package com.shreeram800.springtut.customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
